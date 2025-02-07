@@ -8,8 +8,42 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: { 200: "#FFFFFF" },
+        blueShades: {200: "#CBE4E8"},
+        blackShades: {
+          200: "#000000",
+          300: "#0000004D",
+        },
+        redShades: { 200: "#DB4444" },
+        purple: {
+          200: "#703BF7",
+          300: "#8254F8",
+          400: "#946CF9",
+          500: "#A685FA",
+          600: "#DBCEFD",
+          700: "#EDE7FE",
+          800: "#F4F0FE",
+          900: "#FBFAFF",
+        },
+        whiteShades: {
+          500: "#E4E4E7",
+          600: "#F1F1F3",
+          700: "#F7F7F8",
+          800: "#FCFCFD",
+        },
+        greyShades: {
+          200: "#2F2E30",
+          300: "#FAFAFA",
+          400: "#F5F5F5",
+          500: "",
+          600: "",
+          700: "",
+          800: "",
+          900: "",
+        },
+        orangeBrown: {
+          200: "#D37643",
+        },
       },
     },
   },
