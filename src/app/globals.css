@@ -19,3 +19,48 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.header-placeholder::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: #ffff;
+  color: #000000;
+  transition: left 0.3s ease-in-out;
+  padding-top: 40px;
+  z-index: 1000;
+}
+.links {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+.sidebar.active {
+  left: 0;
+}
+
+/* Overlay to close sidebar when clicking outside */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}

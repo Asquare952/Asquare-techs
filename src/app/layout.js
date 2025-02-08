@@ -1,4 +1,4 @@
-import { Poppins, serif } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
