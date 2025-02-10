@@ -7,7 +7,7 @@
   --foreground: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;
     --foreground: #000000;
@@ -63,4 +63,38 @@ body {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     z-index: 500;
+}
+.glass {
+  backdrop-filter: blur(100px);
+  background: #000000;
+  border-radius: 15px;
+  padding: 20px;
+}
+.drop-down a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fafafa;
+}
+.drop-down span{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* sign up form */
+@media (max-width: 1280px) {
+  .form{
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+}
+
+.form-input{
+  border-bottom: 1px solid #e0e0e4;
+  padding-right: 10px;
+}
+.form-input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
