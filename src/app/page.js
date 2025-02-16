@@ -1,6 +1,6 @@
 'use client';
 
-import HomePage from "./home/index";
+import HomePage from "./home/Index";
 
 const page = () => {
   return <div>
