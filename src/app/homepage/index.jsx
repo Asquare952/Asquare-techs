@@ -5,7 +5,7 @@ import BestSellingProducts from './BestSellingProducts'
 import Catigories from './Catigories'
 import ExploreProducts from './ExploreProducts'
 import OurServices from './OurServices'
-const Index = () => {
+const HomePage = () => {
   return (
     <div className="pt-[90px]">
       <Hero />
@@ -19,4 +19,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default HomePage;
