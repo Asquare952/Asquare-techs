@@ -1,4 +1,4 @@
-import HomePage from "./home/page.jsx";
+import HomePage from "./home/index"
 
 import React from "react";
 
