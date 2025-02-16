@@ -1,10 +1,10 @@
 'use client';
 
-import HomePage from "./home/Index";
+import Index from "./home/Index";
 
 const page = () => {
   return <div>
-    <HomePage/>
+    <Index/>
   </div>;
 };
 
