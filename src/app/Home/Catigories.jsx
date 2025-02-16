@@ -2,6 +2,7 @@
 
 import { catigoriesData } from "./utils/cartigoryData";
 import { useState } from "react";
+
 const Catigories = () => {
   const [catigories, setCatigories] = useState(catigoriesData);
   return (
