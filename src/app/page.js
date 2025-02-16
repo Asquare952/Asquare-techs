@@ -1,6 +1,6 @@
 'use client';
 
-import Homepage from "./home/Index"
+import Homepage from "@/app/home/Index"
 
 const page = () => {
   return <div>
