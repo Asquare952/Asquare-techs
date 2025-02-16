@@ -11,7 +11,7 @@ const profileDropdown = ({ dropDown, closeDropDown }) => {
   return (
     <>
       <section
-        className={`absolute z-10 bg-blackShades-200 bg-opacity-50 p-5 rounded-md left-40 top-28 ${
+        className={`absolute z-[10] bg-blackShades-200 bg-opacity-50 p-5 rounded-md right-0  top-20 ${
           dropDown ? "block" : "hidden"
         }`}
         onClick={(e) => e.stopPropagation()}

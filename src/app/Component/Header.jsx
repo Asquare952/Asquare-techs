@@ -36,8 +36,8 @@ const Header = () => {
 
   return (
     <>
-      <header className=" shadow-md relative">
-        <section className="container flex justify-between items-center  sticky">
+      <header className=" shadow-md bg-white-200 fixed w-full top-0 left-0 z-[1000] py-8">
+        <section className="container flex justify-between items-center">
           <div className="flex items-center gap-3 text-lg">
             <IoIosMenu
               className=" lg:hidden text-2xl"
@@ -61,7 +61,7 @@ const Header = () => {
           </nav>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex md:relative">
-              <CiSearch className=" absolute left-[200px] top-[13px] cursor-pointer" />
+              <CiSearch className=" absolute left-[200px] z-10 top-[13px] cursor-pointer" />
               <form className="">
                 <input
                   type="search"
@@ -75,25 +75,28 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-4">
               <IoCartOutline className=" text-2xl cursor-pointer" />
-              <FiUser
-                className=" text-2xl cursor-pointer"
-                onClick={toggleDropDown}
-              />
+              <div className=" relative">
+                <FiUser
+                  className=" text-2xl cursor-pointer"
+                  onClick={toggleDropDown}
+                />
+                {showDropDown && (
+                  <>
+                    <div
+                      className="fixed inset-0 bg-black bg-opacity-0 z-10"
+                      onClick={() => setIsSidebarOpen(false)}
+                    ></div>
+                    <ProfileDropdown
+                      dropDown={true}
+                      closeDropDown={() => setIsSidebarOpen(false)}
+                    />
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </section>
-        {showDropDown && (
-          <>
-            <div
-              className="fixed inset-0 bg-black bg-opacity-0 z-10"
-              onClick={() => setIsSidebarOpen(false)}
-            ></div>
-            <ProfileDropdown
-              dropDown={true}
-              closeDropDown={() => setIsSidebarOpen(false)}
-            />
-          </>
-        )}
+        
       </header>
 
       <Sidebar

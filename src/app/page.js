@@ -1,4 +1,4 @@
-import HomePage from "./Home/page";
+import HomePage from "./home/page";
 
 import React from "react";
 

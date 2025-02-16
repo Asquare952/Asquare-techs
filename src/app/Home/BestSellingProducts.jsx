@@ -3,7 +3,7 @@ import React from 'react'
 const BestSellingProducts = () => {
   return (
     <div>
-      <h2>Best Selling Products</h2>
+      <h2></h2>
     </div>
   );
 }

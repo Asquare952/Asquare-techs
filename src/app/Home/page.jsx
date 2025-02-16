@@ -6,14 +6,16 @@ import ExploreProducts from './ExploreProducts'
 import OurServices from './OurServices'
 const HomePage = () => {
   return (
-    <div>
-      <Hero/>
-      <BestSellingProducts/>
-      <Catigories/>
-      <ExploreProducts/>
-      <OurServices/>
+    <div className="pt-[90px]">
+      <Hero />
+      <div className="container">
+        <Catigories />
+        <BestSellingProducts />
+        <ExploreProducts />
+        <OurServices />
+      </div>
     </div>
-  )
+  );
 }
 
 export default HomePage
