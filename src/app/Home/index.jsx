@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+
 import Hero from './Hero'
 import BestSellingProducts from './BestSellingProducts'
 import Catigories from './Catigories'

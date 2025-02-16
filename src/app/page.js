@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import HomePage from "./home";
+import HomePage from "./home/index";
 
 const page = () => {
   return <div>
