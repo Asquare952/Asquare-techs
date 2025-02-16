@@ -1,6 +1,6 @@
 'use client';
 
-import Homepage from "./home/Index.jsx"
+import Homepage from "./home/Index"
 
 const page = () => {
   return <div>
