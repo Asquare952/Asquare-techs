@@ -37,7 +37,7 @@ const Page = () => {
       setFormError("Please fill out the form correctly before login");
     } else {
       setFormError("");
-      router.push("/home");
+      router.push("/");
       setInterval(5000)
     }
   };
