@@ -4,7 +4,7 @@ import Hero from './Hero'
 import BestSellingProducts from './BestSellingProducts'
 import Catigories from './Catigories'
 import ExploreProducts from './ExploreProducts'
-import OurServices from './OurServices'
+import OurServices from '../Component/OurServices'
 const HomePage = () => {
   return (
     <div className="pt-[90px]">

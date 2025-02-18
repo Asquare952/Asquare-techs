@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { Products } from "../utils/productsData";
 import Image from "next/image";
+import Link from "next/link";
 
 const ExploreProducts = () => {
   const [product, setProduct] = useState(Products);
   return (
     <>
-      <section className="mt-10 flex flex-col gap-14">
+      <section className="mt-10 flex flex-col gap-14 mb-5">
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <div className="bg-redShades-200 w-5 h-10 rounded"></div>
@@ -22,7 +23,7 @@ const ExploreProducts = () => {
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {product.map((item) => {
+          {product.slice(1, 9).map((item) => {
             const { id, name, images, price } = item;
             return (
               <div key={id} className="flex flex-col gap-4">
@@ -39,11 +40,19 @@ const ExploreProducts = () => {
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="font-medium text-base ">{name}</p>
-                  <span className="font-medium text-base text-redShades-200">#{price}</span>
+                  <span className="font-medium text-base text-redShades-200">
+                    #{price}
+                  </span>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        <div className="text-center">
+          <button className="border-none bg-redShades-200 py-4 px-12 text-white-200 rounded">
+            <Link href="/products" className="font-medium text-base">View All Products</Link>
+          </button>
         </div>
       </section>
     </>
