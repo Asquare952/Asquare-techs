@@ -9,7 +9,7 @@ const ExploreProducts = () => {
   const [product, setProduct] = useState(Products);
   return (
     <>
-      <section className="mt-10 flex flex-col gap-14 mb-5">
+      <section className="flex flex-col gap-14 mb-44">
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <div className="bg-redShades-200 w-5 h-10 rounded"></div>
@@ -27,8 +27,8 @@ const ExploreProducts = () => {
             const { id, name, images, price } = item;
             return (
               <div key={id} className="flex flex-col gap-4">
-                <div className=" relative bg-greyShades-400 min-h-32 rounded">
-                  <div className=" absolute top-4 left-5">
+                <div className=" relative  bg-greyShades-400  rounded">
+                  <div className="">
                     <Image
                       src={images}
                       width={120}

@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blackShades-200 p-6  text-greyShades-300">
+    <footer className="bg-blackShades-200 p-6 w-full text-greyShades-300 mt-20">
       <section className="container grid grid-cols-2 lg:grid-cols-5 gap-20">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-3">

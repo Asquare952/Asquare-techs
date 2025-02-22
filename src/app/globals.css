@@ -112,3 +112,13 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+.responsive-img{
+  max-width: 950px;
+  width: 100%;
+  height: auto;
+}
+.gray-bg{
+  max-width: 270px;
+  width: 100%;
+  height: auto;
+}

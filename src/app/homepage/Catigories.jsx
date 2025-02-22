@@ -7,7 +7,7 @@ const Catigories = () => {
   const [catigories, setCatigories] = useState(catigoriesData);
   return (
     <>
-      <section className="mt-10 flex flex-col gap-14">
+      <section className="mb-44 flex flex-col gap-14">
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <div className="bg-redShades-200 w-5 h-10 rounded"></div>
