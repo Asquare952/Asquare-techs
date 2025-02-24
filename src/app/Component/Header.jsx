@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" shadow-md bg-white-200 fixed w-full top-0 left-0 z-[1000] py-8">
+      <header className=" shadow-md bg-white-200 sticky w-full top-0 left-0 z-[1000] py-8">
         <section className="container flex justify-between items-center">
           <div className="flex items-center gap-3 text-lg">
             <IoIosMenu

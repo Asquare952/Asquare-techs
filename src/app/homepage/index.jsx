@@ -7,7 +7,7 @@ import ExploreProducts from './ExploreProducts'
 import OurServices from '../Component/OurServices'
 const HomePage = () => {
   return (
-    <div className="pt-[90px]">
+    <div className="">
       <Hero />
       <div className="container">
         <Catigories />

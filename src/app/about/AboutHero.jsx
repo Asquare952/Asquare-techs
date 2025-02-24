@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutHero = () => {
   return (
     <>
-      <section className="mt-36">
+      <section className="mt-16">
         <div className="flex flex-col-reverse gap-6 lg:flex-row lg:justify-between lg:items-center ">
           <div className="flex flex-col gap-8">
             <h3 className="font-semibold text-2xl">Our Story</h3>
