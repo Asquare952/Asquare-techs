@@ -1,15 +1,13 @@
-"use client"
-
-import React from 'react'
+import Product from "./Product";
 
 const page = () => {
   return (
     <>
-    <section>
-
-    </section>
+      <section className="container">
+        <Product />
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;
