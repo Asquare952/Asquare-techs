@@ -6,7 +6,7 @@ export const Products = [
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -26,12 +26,12 @@ export const Products = [
   },
   {
     id: "2",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
+    name: "Dell Notebook 15 latitude 5550 RGB Silver",
+    brand: "Dell",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -41,7 +41,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/notebook-latitude-15-5550-rgb-silver-gallery-20-business.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -51,12 +52,12 @@ export const Products = [
   },
   {
     id: "3",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
-    category: "Business",
+    name: "Dell Notebook Alienware x16 r2 gray",
+    brand: "Dell",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -66,7 +67,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/dell-notebook-alienware-x16-r2-gray-gallery-12.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -76,12 +78,12 @@ export const Products = [
   },
   {
     id: "4",
-    name: "MacBook Pro 16-inch M2",
+    name: "Omen Transcend Laptop-14 120Hz 3K",
     brand: "Hp",
-    category: "Business",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -91,7 +93,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/omen-Transcend-Laptop-14-120Hz-3K.webp",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -101,12 +103,12 @@ export const Products = [
   },
   {
     id: "5",
-    name: "MacBook Pro 16-inch M2",
+    name: "Omen Transcend Laptop-16 ",
     brand: "Hp",
-    category: "Business",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -116,7 +118,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/omen-Transcend-Laptop-16.webp",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -126,12 +128,12 @@ export const Products = [
   },
   {
     id: "6",
-    name: "MacBook Pro 16-inch M2",
+    name: "HP Elitebook XFlip G1i 14inch",
     brand: "Hp",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -141,7 +143,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/HP-Elitebook-X-Flip-G1i-14inch-Notebook-business.webp",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -151,12 +154,12 @@ export const Products = [
   },
   {
     id: "7",
-    name: "MacBook Pro 16-inch M2",
+    name: "Hp Laptop 17t-cn300 17.3",
     brand: "Hp",
-    category: "Business",
+    category: "Student",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -176,12 +179,12 @@ export const Products = [
   },
   {
     id: "8",
-    name: "MacBook Pro 16-inch M2",
+    name: "Hp Notebook Inspiron-14 7440-t ice blue",
     brand: "Hp",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -191,7 +194,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/notebook-inspiron-14-7440-t-ice-blue-gallery-4-business.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -201,12 +205,12 @@ export const Products = [
   },
   {
     id: "9",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
+    name: "Dell Notebook g15 5535-nt black",
+    brand: "Dell",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -216,7 +220,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/dell-notebook-g15-5535-nt-bk-gallery-4.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -226,12 +230,12 @@ export const Products = [
   },
   {
     id: "10",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
-    category: "Business",
+    name: "Dell Laptop Alienware m18 r2 hd perkey intel black",
+    brand: "Dell",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -241,7 +245,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/dell-laptop-alienware-m18-r2-hd-perkey-intel-bk-gallery-2.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -251,12 +256,12 @@ export const Products = [
   },
   {
     id: "11",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
-    category: "Business",
+    name: "Dell g16 Gaming Laptop",
+    brand: "Dell",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -266,7 +271,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/dell-g16-gaming-laptop.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -276,12 +281,12 @@ export const Products = [
   },
   {
     id: "12",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
+    name: "Dell Notebook Inspiron-15 3520 Black",
+    brand: "Dell",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -291,7 +296,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/notebook-inspiron-15-3520-black-gallery-4-business.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -301,12 +307,12 @@ export const Products = [
   },
   {
     id: "13",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
+    name: "Dell Notebook 15 latitude 3550 Gray",
+    brand: "Dell",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -316,7 +322,8 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images:
+      "/Assets/laptops/notebook-latitude-15-3550-gray-gallery-2-business.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -326,12 +333,12 @@ export const Products = [
   },
   {
     id: "14",
-    name: "MacBook Pro 16-inch M2",
-    brand: "Hp",
-    category: "Business",
+    name: "Dell Alienware-m16 R2",
+    brand: "Dell",
+    category: "Gaming",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -341,7 +348,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/dell-alienware-m16-R2-Gaming-Laptop.png",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -351,12 +358,12 @@ export const Products = [
   },
   {
     id: "15",
-    name: "MacBook Pro 16-inch M2",
+    name: "Hp Probook x360 435",
     brand: "Hp",
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -366,7 +373,7 @@ export const Products = [
       weight: "2.1kg",
       operatingSystem: "macOS Ventura",
     },
-    images: "/Assets/laptops/hp-EliteBook-665-16-inch-G11-business.png",
+    images: "/Assets/laptops/hp-probook-x360 435-business.webp",
     stock: 15,
     isNewArrival: true,
     ratings: {
@@ -381,7 +388,7 @@ export const Products = [
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -406,7 +413,7 @@ export const Products = [
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
@@ -431,7 +438,7 @@ export const Products = [
     category: "Business",
     price: 2499,
     description: "Powerful M2 chip, 16-inch Retina display, 32GB RAM.",
-    specifications: {
+    configorations: {
       processor: "Apple M2 Pro",
       ram: "32GB",
       storage: "1TB SSD",
