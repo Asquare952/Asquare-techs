@@ -1,61 +1,25 @@
 "use client";
 
-import { useState, useEffect } from "react";
+
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import { Products } from "../utils/productsData";
 import { IoMdClose } from "react-icons/io";
+import { useFilter } from "@/app/context/FilterContext";
 
-const Modal = ({ openModal, toggleModal }) => {
-  const [product, setProduct] = useState(Products);
-  const [filters, setFilters] = useState({ brand: [], category: [] });
-  const [filterVisibility, setFilterVisibility] = useState({
-    brands: true,
-    categories: true,
-    // price: true,
-    // ratings: true,
-  });
 
-  const toggleFilter = (filterName) => {
-    setFilterVisibility((prev) => ({
-      ...prev,
-      [filterName]: !prev[filterName], // Toggle the specific filter
-    }));
-  };
-
-  const handleFilterChange = (type, value) => {
-    setFilters((prev) => ({
-      ...prev,
-      [type]: prev[type].includes(value)
-        ? prev[type].filter((item) => item !== value)
-        : [...prev[type], value],
-    }));
-  };
-
-  useEffect(() => {
-    if (filters.brand.length === 0 && filters.category.length === 0) {
-      setProduct(Products); // Show all products if no filters are applied
-      return;
-    }
-
-    const filtered = product.filter(
-      (product) =>
-        (filters.brand.length === 0 || filters.brand.includes(product.brand)) &&
-        (filters.category.length === 0 ||
-          filters.category.includes(product.category))
-    );
-
-    setProduct(filtered);
-  }, [filters]);
-
-  const clearFilters = () => {
-    setFilters({ brand: [], category: [] });
-    setProduct(Products);
-  };
+const Modal = ({openModal, toggleModal}) => {
+  const {
+    filterVisibility,
+    clearFilters,
+    filters,
+    toggleFilter,
+    handleFilterChange,
+  } = useFilter();
+  
 
   return (
     <section className={openModal ? "modalOverlay container" : ""}>
-      <div className="flex flex-col gap-5 mt-24">
+      <div className="flex flex-col gap-5 mt-5">
         <div className="flex justify-between">
           <h1>Filters</h1>
           <IoMdClose className=" text-2xl" onClick={toggleModal} />
@@ -69,6 +33,7 @@ const Modal = ({ openModal, toggleModal }) => {
           </button>
         </div>
 
+        {/* brand filter container */}
         <div className="flex flex-col gap-4">
           <div
             className={
@@ -101,7 +66,8 @@ const Modal = ({ openModal, toggleModal }) => {
               </div>
             )}
           </div>
-          {/*  */}
+
+          {/* categories filter container */}
           <div
             className={
               filterVisibility.categories

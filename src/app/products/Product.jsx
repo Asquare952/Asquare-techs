@@ -2,59 +2,18 @@
 
 import Modal from "../Component/Modal";
 import Image from "next/image";
+import Link from "next/link";
+import { FaRegHeart } from "react-icons/fa";
 import { IoFilterOutline } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import { Products } from "../utils/productsData";
-import { useState, useEffect } from "react";
+import { useState } from "react"; 
+import { useFilter } from "@/app/context/FilterContext";
+
 
 const Product = () => {
-  const [product, setProduct] = useState(Products);
+  const { product, filterVisibility, clearFilters, filters, toggleFilter, handleFilterChange} = useFilter();
   const [modal, setModal] = useState(false);
-  const [filters, setFilters] = useState({ brand: [], category: [] });
-  const [filterVisibility, setFilterVisibility] = useState({
-    brands: true,
-    categories: true,
-    // price: true,
-    // ratings: true,
-  });
-
-  const toggleFilter = (filterName) => {
-    setFilterVisibility((prev) => ({
-      ...prev,
-      [filterName]: !prev[filterName], // Toggle the specific filter
-    }));
-  };
-
-  const handleFilterChange = (type, value) => {
-    setFilters((prev) => ({
-      ...prev,
-      [type]: prev[type].includes(value)
-        ? prev[type].filter((item) => item !== value)
-        : [...prev[type], value],
-    }));
-  };
-
-  useEffect(() => {
-    if (filters.brand.length === 0 && filters.category.length === 0) {
-      setProduct(Products); // Show all products if no filters are applied
-      return;
-    }
-
-    const filtered = product.filter(
-      (product) =>
-        (filters.brand.length === 0 || filters.brand.includes(product.brand)) &&
-        (filters.category.length === 0 ||
-          filters.category.includes(product.category))
-    );
-
-    setProduct(filtered);
-  }, [filters]);
-
-  const clearFilters = () => {
-    setFilters({ brand: [], category: [] });
-    setProduct(Products);
-  };
 
   const handleModal = () => {
     setModal(!modal);
@@ -96,7 +55,7 @@ const Product = () => {
                 {/* </div> */}
                 {filterVisibility.brands && (
                   <div className="flex flex-col gap-4">
-                    {["Dell", "HP", "Lenovo", "Asus"].map((brand) => (
+                    {["Dell", "Hp", "Lenovo", "Asus"].map((brand) => (
                       <label key={brand}>
                         <input
                           type="checkbox"
@@ -110,7 +69,8 @@ const Product = () => {
                   </div>
                 )}
               </div>
-              {/*  */}
+
+              {/* categories filter container */}
               <div
                 className={
                   filterVisibility.categories
@@ -167,17 +127,25 @@ const Product = () => {
                 product.map((item) => {
                   const { id, name, images, price } = item;
                   return (
-                    <div key={id} className="flex flex-col gap-4">
-                      <div className=" relative  bg-greyShades-400  rounded">
-                        <div className="">
+                    <Link
+                      href={`/products/${item.id}`}
+                      key={id}
+                      className="flex flex-col gap-4"
+                    >
+                      <div className=" relative  bg-greyShades-400  rounded  h-52">
+                        <div className="flex justify-center items-center mt-14">
                           <Image
                             src={images}
                             width={120}
                             height={180}
                             alt={name}
-                            className=""
+                            className="w-[150] object-cover"
                           />
                         </div>
+
+                        <button className=" absolute bg-white-200 p-2 rounded-full top-2 right-2">
+                          <FaRegHeart />
+                        </button>
                       </div>
                       <div className="flex flex-col gap-2">
                         <p className="font-medium text-base ">{name}</p>
@@ -185,11 +153,13 @@ const Product = () => {
                           #{price}
                         </span>
                       </div>
-                    </div>
+                    </Link>
                   );
                 })
               ) : (
-                <p className=" justify-center">No matching products found.</p>
+                <div className=" flex justify-center items-center">
+                  <p>No matching products found.</p>
+                </div>
               )}
             </div>
           </div>

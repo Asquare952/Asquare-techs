@@ -10,9 +10,7 @@ import * as yup from "yup";
 
 const schema = yup.object().shape({
   email: yup.string().email("Invalid email").required("Email is required"),
-  password: yup
-    .string()
-    .required("Password is required"),
+  password: yup.string().required("Password is required"),
 });
 
 // handle register click
@@ -38,20 +36,20 @@ const Page = () => {
     } else {
       setFormError("");
       router.push("/");
-      setInterval(5000)
+      setInterval(5000);
     }
   };
 
   return (
     <>
-      <section className=" pt-36">
+      <section className=" pt-10">
         <div className="form-container p-5">
           <div className="flex flex-col gap-12 form">
             <Link href="/register">
               <FaArrowLeft />
             </Link>
             <div className="flex flex-col gap-6">
-              <h3 className=" font-medium text-4xl ">
+              <h3 className=" font-medium md:text-4xl ">
                 Log in to Asquarez Tech
               </h3>
               <p className="font-normal text-base">Enter your details below</p>
@@ -87,10 +85,10 @@ const Page = () => {
                 Log in
               </button>
             </form>
-            <div className="flex items-center  justify-between">
+            <div className="flex items-center flex-col   justify-between">
               <div>
                 <p>
-                  Don't have an account?{" "}
+                  Don't have an account?
                   <Link href="/register" className=" underline">
                     Sign Up
                   </Link>

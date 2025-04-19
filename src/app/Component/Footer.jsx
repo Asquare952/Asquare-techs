@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blackShades-200 p-6 w-full text-greyShades-300 mt-20">
+    <footer className="bg-blackShades-200 py-6 w-full text-greyShades-300 mt-20">
       <section className="container grid grid-cols-2 lg:grid-cols-5 gap-20">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-3">
@@ -19,7 +19,7 @@ const Footer = () => {
           <h3 className="font-medium text-base lg:text-xl">Support</h3>
           <ol className="flex flex-col gap-4">
             <li className="font-medium text-base">18 Akanji Odutolu</li>
-            <li className="font-medium text-base">Asquarez@gmail.com</li>
+            <li className="font-medium text-sm md:text-base">Asquarez@gmail.com</li>
             <li className="font-medium text-base">+234 9137139186</li>
           </ol>
         </div>

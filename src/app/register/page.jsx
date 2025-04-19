@@ -49,7 +49,7 @@ const page = () => {
   };
 
   return (
-    <section className="pt-36">
+    <section className="pt-5">
       <div className="form-container p-5">
         <div className="flex flex-col gap-12 form">
           <Link href="/">

@@ -8,9 +8,12 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FiUser } from "react-icons/fi";
 import { IoIosMenu } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa";
 import ProfileDropdown from "./ProfileDropdown";
+import { useCart } from "@/app/context/CartContext";
 
 const Header = () => {
+  const {cartItems} = useCart() 
   const [Navlinks, setNavLinks] = useState(navLinks);
   const [Value, setValue] = useState(0);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -74,7 +77,22 @@ const Header = () => {
               <CiSearch className=" text-2xl cursor-pointer md:hidden" />
             </div>
             <div className="flex items-center gap-4">
-              <IoCartOutline className=" text-2xl cursor-pointer" />
+              <div className="relative">
+                <Link href="/wishlist">
+                  <FaRegHeart className=" text-2xl cursor-pointer" />
+                </Link>
+                <div className=" absolute p-2 left-4 bottom-3 rounded-full bg-redShades-200"></div>
+              </div>
+
+              <div className="relative">
+                <Link href="/cart">
+                  <IoCartOutline className=" text-2xl cursor-pointer" />
+                </Link>
+                {cartItems.length > 0 && (
+                  <div className="w-full absolute p-2 left-4 bottom-3 rounded-full bg-redShades-200">{cartItems.length}</div>
+                )}
+              </div>
+
               <div className=" relative">
                 <FiUser
                   className=" text-2xl cursor-pointer"
@@ -96,7 +114,6 @@ const Header = () => {
             </div>
           </div>
         </section>
-        
       </header>
 
       <Sidebar
